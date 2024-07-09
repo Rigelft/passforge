@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PassForge - Documentation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/docstyle.css">
+</head>
+
+<body>
+
+  <!-- GESTION DU CHARGEMENT DE LA PAGE § -->
+  <div id="loader">
+    <div class="loader-icon"></div>
+  </div>
+  <div id="logoppl">
+    <img src="img/logo.svg" draggable="false">
+  </div>
+  <!-- FIN DE LA GESTION DU CHARGEMENT DE LA PAGE § -->
+
+  <nav>
+    <div class="logo" draggable="false">
+      <img src="img/sticky.png" style="width: 60px; height: 60px;" draggable="false">
+    </div>
+    <ul>
+      <li><a href="#introduction" class="active">Introduction</a></li>
+      <li><a href="#getting-started">Commencer</a></li>
+      <li><a href="#features">Fonctionnalités</a></li>
+      <li><a href="#usage">Utilisation</a></li>
+      <li><a href="#storage">Stockage</a></li>
+      <li><a href="#best-practices">Bonnes pratiques</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#support">Support</a></li>
+      <li><a href="#developer">À propos du développeur</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Documentation PassForge</h1>
+
+    <section id="introduction" class="content-section">
+      <h2>Introduction</h2>
+      <p>Bienvenue dans la documentation de PassForge, votre outil de confiance pour générer des mots de passe
+        sécurisés. Dans un monde où la sécurité en ligne est primordiale, PassForge vous offre une solution simple et
+        efficace pour créer des mots de passe robustes et uniques pour tous vos comptes.</p>
+      <a href="index.html" class="btn">Commencer maintenant</a>
+    </section>
+
+    <section id="getting-started" class="content-section">
+      <h2>Commencer</h2>
+      <p>Pour commencer à utiliser PassForge, suivez ces étapes simples :</p>
+      <ol>
+        <li>Visitez <a href="index.html" style="color: var(--text);">la page officielle de l'outil</a></li>
+        <li>Ajustez les paramètres selon vos besoins spécifiques</li>
+        <li>Cliquez sur "Générer un mot de passe"</li>
+        <li>Copiez et utilisez votre nouveau mot de passe sécurisé</li>
+      </ol>
+      <p>C'est aussi simple que ça ! Vous êtes maintenant prêt à sécuriser vos comptes avec des mots de passe de haute
+        qualité.</p>
+    </section>
+
+    <section id="features" class="content-section">
+      <h2>Fonctionnalités</h2>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <h3>Longueur personnalisable</h3>
+          <p>Choisissez une longueur de 8 à 64 caractères</p>
+        </div>
+        <div class="feature-item">
+          <h3>Caractères variés</h3>
+          <p>Incluez majuscules, chiffres et symboles</p>
+        </div>
+        <div class="feature-item">
+          <h3>Phrases de passe</h3>
+          <p>Générez des phrases de passe mémorisables</p>
+        </div>
+        <div class="feature-item">
+          <h3>Évaluation en temps réel</h3>
+          <p>Visualisez la force de votre mot de passe</p>
+        </div>
+        <div class="feature-item">
+          <h3>Historique des mots de passe</h3>
+          <p>Suivez et gérez les mots de passe générés précédemment</p>
+        </div>
+        <div class="feature-item">
+          <h3>Pagination</h3>
+          <p>Affichez les mots de passe par pages pour une meilleure gestion</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="usage" class="content-section">
+      <h2>Utilisation</h2>
+      <p>Pour générer un mot de passe sécurisé :</p>
+      <ol>
+        <li>Réglez la longueur souhaitée à l'aide du curseur</li>
+        <li>Cochez ou décochez les options pour inclure majuscules, chiffres et symboles</li>
+        <li>Si vous le souhaitez, entrez le nom du compte dans le champ "Nom du compte"</li>
+        <li>Cliquez sur "Générer un mot de passe"</li>
+        <li>Votre mot de passe sécurisé apparaîtra dans le champ en haut</li>
+      </ol>
+      <p>La force du mot de passe est évaluée automatiquement et affichée en bas de l'interface.</p>
+      <div>
+        <h3>Exemple d'interface :</h3>
+        <img src="img/fonctionnalitées.png" alt="Capture d'écran de l'interface PassForge" style="max-width: 100%;">
+      </div>
+    </section>
+
+    <section id="storage" class="content-section">
+      <h2>Stockage des mots de passe</h2>
+      <p>Les mots de passe générés avec PassForge sont stockés localement sur votre navigateur en utilisant le
+        <code>localStorage</code>. Cette méthode de stockage est sécurisée car :</p>
+      <ul>
+        <li>Les mots de passe ne quittent jamais votre appareil.</li>
+        <li>Vous avez un contrôle total sur vos mots de passe et pouvez les supprimer à tout moment.</li>
+        <li>Il n'y a aucun risque de stockage de vos mots de passe sur des serveurs externes.</li>
+      </ul>
+      <p>Le <code>localStorage</code> permet également à PassForge de conserver un historique de vos mots de passe
+        générés, facilitant ainsi leur gestion et leur réutilisation si nécessaire.</p>
+    </section>
+
+    <section id="best-practices" class="content-section">
+      <h2>Bonnes pratiques</h2>
+      <ul>
+        <li>
+          <strong>Utilisez un mot de passe unique pour chaque compte :</strong>
+          <p>Utiliser le même mot de passe pour plusieurs comptes augmente considérablement le risque de piratage. Si un
+            pirate réussit à obtenir votre mot de passe, il pourra accéder à tous vos comptes. Utiliser des mots de
+            passe uniques pour chaque compte réduit ce risque en limitant l'impact d'une éventuelle compromission.</p>
+          <p><em>Exemple de faille :</em> Les attaques de credential stuffing, où les pirates utilisent des combinaisons
+            de mots de passe volées pour tenter d'accéder à d'autres comptes en ligne.</p>
+        </li>
+        <li>
+          <strong>Optez pour des mots de passe d'au moins 12 caractères :</strong>
+          <p>Plus un mot de passe est long, plus il est difficile à craquer. Les mots de passe courts peuvent être
+            facilement devinés ou forcés par des outils automatisés.</p>
+          <p><em>Exemple de faille :</em> Les attaques par force brute, où les pirates essaient toutes les combinaisons
+            possibles de mots de passe jusqu'à trouver la bonne.</p>
+        </li>
+        <li>
+          <strong>Incluez un mélange de majuscules, minuscules, chiffres et symboles :</strong>
+          <p>Un mot de passe complexe est plus difficile à deviner. En mélangeant différents types de caractères, vous
+            augmentez la sécurité de vos mots de passe.</p>
+          <p><em>Exemple de faille :</em> Les attaques par dictionnaire, où les pirates utilisent des listes de mots
+            courants et de combinaisons de caractères pour deviner votre mot de passe.</p>
+        </li>
+        <li>
+          <strong>Évitez d'utiliser des informations personnelles dans vos mots de passe :</strong>
+          <p>Les informations personnelles telles que votre nom, votre date de naissance ou le nom de votre animal de
+            compagnie sont souvent faciles à trouver ou à deviner. Les pirates peuvent utiliser ces informations pour
+            deviner vos mots de passe.</p>
+          <p><em>Exemple de faille :</em> Les attaques de social engineering, où les pirates collectent des informations
+            personnelles pour deviner ou réinitialiser vos mots de passe.</p>
+        </li>
+        <li>
+          <strong>Utilisez un gestionnaire de mots de passe pour stocker vos identifiants en toute sécurité :</strong>
+          <p>Les gestionnaires de mots de passe peuvent générer, stocker et gérer vos mots de passe de manière
+            sécurisée. Ils vous permettent d'utiliser des mots de passe uniques et complexes sans avoir à les mémoriser.
+          </p>
+          <p><em>Exemple de faille :</em> Les notes papier ou les fichiers non sécurisés sur votre ordinateur peuvent
+            être facilement accessibles à des tiers non autorisés.</p>
+        </li>
+        <li>
+          <strong>Activez l'authentification à deux facteurs quand c'est possible :</strong>
+          <p>L'authentification à deux facteurs (2FA) ajoute une couche supplémentaire de sécurité. Même si votre mot de
+            passe est compromis, l'attaquant aurait besoin du second facteur (comme un code envoyé sur votre téléphone)
+            pour accéder à votre compte.</p>
+          <p><em>Exemple de faille :</em> Les attaques par phishing, où les pirates obtiennent vos mots de passe mais ne
+            peuvent pas accéder à votre compte sans le second facteur d'authentification.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="faq" class="content-section">
+      <h2>FAQ</h2>
+      <button class="accordion">Les mots de passe générés sont-ils vraiment aléatoires ?</button>
+      <div class="panel">
+        <p>Oui, nous utilisons un générateur de nombres aléatoires cryptographiquement sûr pour assurer une véritable
+          randomisation.</p>
+      </div>
+
+      <button class="accordion">Puis-je faire confiance à PassForge pour ne pas stocker mes mots de passe ?</button>
+      <div class="panel">
+        <p>Absolument. Nous ne stockons jamais les mots de passe générés. Tout le processus se déroule localement dans
+          votre navigateur.</p>
+      </div>
+
+      <button class="accordion">Quelle est la différence entre un mot de passe et une phrase de passe ?</button>
+      <div class="panel">
+        <p>Un mot de passe est généralement une chaîne aléatoire de caractères, tandis qu'une phrase de passe est une
+          séquence de mots aléatoires, souvent plus facile à mémoriser tout en restant sécurisée.</p>
+      </div>
+
+      <button class="accordion">À quelle fréquence devrais-je changer mes mots de passe ?</button>
+      <div class="panel">
+        <p>Les experts recommandent de changer vos mots de passe tous les 3 à 6 mois, ou immédiatement si vous suspectez
+          une compromission.</p>
+      </div>
+    </section>
+
+    <section id="support" class="content-section">
+      <h2>Support</h2>
+      <p>Si vous avez des questions supplémentaires ou besoin d'assistance, n'hésitez pas à nous contacter :</p>
+      <ul>
+        <li>Email : <a href="#" style="color: var(--text);"><i class="fas fa-envelope"></i> {{Pas encore définis}}</a>
+        </li>
+        <li>Twitter : <a href="#" style="color: var(--text);"><i class="fab fa-twitter"></i> {{Pas encore définis}}</a>
+        </li>
+        <li>Forum d'aide : <a href="#" style="color: var(--text);"><i class="fas fa-comments"></i> {{Pas encore
+            définis}}</a></li>
+      </ul>
+      <p>Notre équipe est là pour vous aider à tirer le meilleur parti de PassForge et à renforcer la sécurité de vos
+        comptes en ligne.</p>
+      <!--       
+      <h3>Formulaire de contact</h3>
+      <form id="contact-form">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Envoyer</button>
+      </form> -->
+    </section>
+
+    <section id="developer" class="content-section">
+      <h2>À propos du développeur</h2>
+      <div class="developer-section">
+        <img src="img/thedev.jpg" alt="Photo du développeur">
+        <div class="developer-details">
+          <p>Bonjour, je suis Félicio, le développeur de PassForge. Passionné par la sécurité informatique et le
+            développement web, j'ai créé PassForge pour aider les utilisateurs à générer des mots de passe sécurisés
+            facilement et efficacement.</p>
+          <div class="social-icons">
+            <a href="https://x.com/fdroyalking?t=k3LcXpMN0EnoYW-vaCJMqA&s=09" target="_blank"><i
+                class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/f%C3%A9licio-de-souza-4a3ba3285/" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Rigelft"><i class="fab fa-github" target="_blank"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer style="text-align: right; font-size: smaller;">
+      <p>&copy; 2024 PassForge. Tous droits réservés.</p>
+    </footer>
+
+  </main>
+
+  <script src="js/docscript.js"></script>
+  <script src="js/loaderscript.js"></script>
+</body>
+
+</html>

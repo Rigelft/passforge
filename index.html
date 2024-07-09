@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassForge Pro - Générateur de Mots de Passe Ultra-Sécurisés</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- GESTION DU CHARGEMENT DE LA PAGE § -->
+    <div id="loader">
+        <div class="loader-icon"></div>
+    </div>
+    <div id="logoppl">
+        <img src="img/logo.svg" draggable="false">
+    </div>
+    <!-- FIN DE LA GESTION DU CHARGEMENT DE LA PAGE § -->
+
+    <header>
+        <nav class="container">
+            <div class="logo"><img src="img/logo.svg" alt="PassForge" style="width: 144px; height: 50px;"></div>
+            <div class="nav-links">
+                <a href="doc.html" target="_blank">Guide d'utilisation</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>1 clic, 1 mot de passe ultra-sécurisé</h1>
+            <p>Générez des mots de passe uniques et inviolables pour tous vos comptes</p>
+
+            <div class="password-generator">
+                <div class="password-output" id="passwordOutput">Votre mot de passe sécurisé</div>
+                <div class="password-options">
+                    <div class="option">
+                        <label for="passwordLength">Longueur du mot de passe:</label>
+                        <input type="range" id="passwordLength" min="8" max="64" value="16"
+                            oninput="updateLengthValue(this.value)">
+                        <span id="lengthValue">16</span>
+                    </div>
+                    <div class="option">
+                        <label for="includeUppercase">Inclure des majuscules</label>
+                        <input type="checkbox" id="includeUppercase" checked>
+                    </div>
+                    <div class="option">
+                        <label for="includeNumbers">Inclure des chiffres</label>
+                        <input type="checkbox" id="includeNumbers" checked>
+                    </div>
+                    <div class="option">
+                        <label for="includeSymbols">Inclure des symboles</label>
+                        <input type="checkbox" id="includeSymbols" checked>
+                    </div>
+                    <div class="option">
+                        <label for="accountName">Nom du compte:</label>
+                        <input type="text" id="accountName" placeholder="Ex: FACEBOOK" autocomplete="off"
+                            oninput="this.value = this.value.toUpperCase(); if(this.value.length > 20) this.value = this.value.slice(0, 20);">
+                    </div>
+                </div>
+                <button class="generate-button" onclick="generatePassword()">Générer un mot de passe</button>
+                <div class="password-strength">
+                    <p>Force du mot de passe: <span id="strengthText">Moyen</span></p>
+                    <div class="strength-meter">
+                        <div class="strength-meter-fill" id="strengthMeter"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="password-history">
+                <h3>Historique des mots de passe</h3>
+                <div id="passwordHistory"></div>
+                <div class="pagination">
+                    <button id="prevPage" onclick="changePage(-1)">Précédent</button>
+                    <button id="nextPage" onclick="changePage(1)">Suivant</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="message" id="message">Message</div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://x.com/fdroyalking?t=k3LcXpMN0EnoYW-vaCJMqA&s=09"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/f%C3%A9licio-de-souza-4a3ba3285/"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/Rigelft"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2023 PassForge - par Félicio. Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/loaderscript.js"></script>
+</body>
+
+</html>
