@@ -1,0 +1,40 @@
+{
+    "meta": {
+        "title": "Passforge | Premium Password Generator",
+        "description": "High-security, RAM-only cryptographic password generator. Generate strong, unbreakable passwords instantly with zero data storage.",
+        "keywords": "password generator, secure password, random password, pin generator, passphrase, security tool"
+    },
+    "home": {
+        "title": "Passforge",
+        "subtitle": "Cryptographic Entropy Engine",
+        "csp_badge": "CSPRNG Active",
+        "footer": "© 2026 Passforge • No database • No cookies • 100% RAM Memory"
+    },
+    "generator": {
+        "generate": "Generate"
+    },
+    "settings": {
+        "tabs": {
+            "random": "Random",
+            "memorable": "Memorable",
+            "pin": "PIN"
+        },
+        "length": "Password Length",
+        "word_count": "Number of Words",
+        "separator": "Separator",
+        "uppercase": "Uppercase (A-Z)",
+        "lowercase": "Lowercase (a-z)",
+        "numbers": "Numbers (0-9)",
+        "symbols": "Symbols (!@#$)",
+        "pin_length": "PIN Length",
+        "pin_info": "PINs are generated with uniform distribution for maximum security."
+    },
+    "display": {
+        "security": "Security",
+        "entropy": "bits of entropy",
+        "generate_placeholder": "Generate a password...",
+        "regenerate": "Regenerate",
+        "copy": "Copy",
+        "copied": "Copied"
+    }
+}

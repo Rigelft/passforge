@@ -1,0 +1,40 @@
+{
+    "meta": {
+        "title": "Passforge | 高级密码生成器",
+        "description": "高安全性、纯内存加密密码生成器。即时创建强大、不可破解的密码，零数据存储。",
+        "keywords": "密码生成器, 安全密码, 随机密码, pin生成器, 密码短语, 安全工具"
+    },
+    "home": {
+        "title": "Passforge",
+        "subtitle": "加密熵引擎",
+        "csp_badge": "CSPRNG 已激活",
+        "footer": "© 2026 Passforge • 无数据库 • 无 Cookie • 100% RAM 内存"
+    },
+    "generator": {
+        "generate": "生成"
+    },
+    "settings": {
+        "tabs": {
+            "random": "随机",
+            "memorable": "易记",
+            "pin": "PIN"
+        },
+        "length": "密码长度",
+        "word_count": "单词数量",
+        "separator": "分隔符",
+        "uppercase": "大写字母 (A-Z)",
+        "lowercase": "小写字母 (a-z)",
+        "numbers": "数字 (0-9)",
+        "symbols": "符号 (!@#$)",
+        "pin_length": "PIN 长度",
+        "pin_info": "PIN 生成采用均匀分布以确保最大安全性。"
+    },
+    "display": {
+        "security": "安全性",
+        "entropy": "比特熵",
+        "generate_placeholder": "生成密码...",
+        "regenerate": "重新生成",
+        "copy": "复制",
+        "copied": "已复制"
+    }
+}

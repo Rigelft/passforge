@@ -1,0 +1,40 @@
+{
+    "meta": {
+        "title": "Passforge | Gerador de Senhas Premium",
+        "description": "Gerador de senhas criptográficas de alta segurança, 100% RAM. Crie senhas fortes e inquebráveis instantaneamente sem armazenamento de dados.",
+        "keywords": "gerador de senhas, senha segura, senha aleatória, gerador de pin, frase secreta, ferramenta de segurança"
+    },
+    "home": {
+        "title": "Passforge",
+        "subtitle": "Motor de Entropia Criptográfica",
+        "csp_badge": "CSPRNG Ativo",
+        "footer": "© 2026 Passforge • Sem base de dados • Sem cookies • 100% Memória RAM"
+    },
+    "generator": {
+        "generate": "Gerar"
+    },
+    "settings": {
+        "tabs": {
+            "random": "Aleatório",
+            "memorable": "Memorável",
+            "pin": "PIN"
+        },
+        "length": "Comprimento da Senha",
+        "word_count": "Número de Palavras",
+        "separator": "Separador",
+        "uppercase": "Maiúsculas (A-Z)",
+        "lowercase": "Minúsculas (a-z)",
+        "numbers": "Números (0-9)",
+        "symbols": "Símbolos (!@#$)",
+        "pin_length": "Comprimento do PIN",
+        "pin_info": "Os PINs são gerados com distribuição uniforme para segurança máxima."
+    },
+    "display": {
+        "security": "Segurança",
+        "entropy": "bits de entropia",
+        "generate_placeholder": "Gere uma senha...",
+        "regenerate": "Regenerar",
+        "copy": "Copiar",
+        "copied": "Copiado"
+    }
+}
