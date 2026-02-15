@@ -1,4 +1,9 @@
 {
+    "meta": {
+        "title": "Passforge | Générateur de Mot de Passe Premium",
+        "description": "Générateur de mot de passe cryptographique haute sécurité, 100% RAM. Créez des mots de passe forts et incassables instantanément sans stockage de données.",
+        "keywords": "générateur de mot de passe, mot de passe sécurisé, mot de passe aléatoire, générateur de pin, phrase de passe, outil de sécurité"
+    },
     "home": {
         "title": "Passforge",
         "subtitle": "Moteur d'Entropie Cryptographique",

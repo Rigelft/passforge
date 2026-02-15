@@ -1,4 +1,9 @@
 {
+    "meta": {
+        "title": "Passforge | Generatore di Password Premium",
+        "description": "Generatore di password crittografiche ad alta sicurezza, solo RAM. Crea password forti e inviolabili istantaneamente senza memorizzazione dei dati.",
+        "keywords": "generatore di password, password sicura, password casuale, generatore pin, passphrase, strumento di sicurezza"
+    },
     "home": {
         "title": "Passforge",
         "subtitle": "Motore di Entropia Crittografica",

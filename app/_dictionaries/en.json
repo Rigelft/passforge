@@ -1,4 +1,9 @@
 {
+    "meta": {
+        "title": "Passforge | Premium Password Generator",
+        "description": "High-security, RAM-only cryptographic password generator. Generate strong, unbreakable passwords instantly with zero data storage.",
+        "keywords": "password generator, secure password, random password, pin generator, passphrase, security tool"
+    },
     "home": {
         "title": "Passforge",
         "subtitle": "Cryptographic Entropy Engine",

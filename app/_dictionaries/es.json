@@ -1,4 +1,9 @@
 {
+    "meta": {
+        "title": "Passforge | Generador de Contraseñas Premium",
+        "description": "Generador de contraseñas criptográficas de alta seguridad, 100% en RAM. Crea contraseñas fuertes e irrompibles al instante sin almacenamiento de datos.",
+        "keywords": "generador de contraseñas, contraseña segura, contraseña aleatoria, generador de pin, frase de contraseña, herramienta de seguridad"
+    },
     "home": {
         "title": "Passforge",
         "subtitle": "Motor de Entropía Criptográfica",

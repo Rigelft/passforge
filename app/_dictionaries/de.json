@@ -1,4 +1,9 @@
 {
+    "meta": {
+        "title": "Passforge | Premium Passwort-Generator",
+        "description": "Hochsicherer, kryptografischer Passwort-Generator (nur RAM). Erstellen Sie sofort starke, unknackbare Passwörter ohne Datenspeicherung.",
+        "keywords": "Passwort-Generator, sicheres Passwort, zufälliges Passwort, PIN-Generator, Passphrase, Sicherheitstool"
+    },
     "home": {
         "title": "Passforge",
         "subtitle": "Kryptographischer Entropie-Motor",

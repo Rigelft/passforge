@@ -1,4 +1,9 @@
 {
+    "meta": {
+        "title": "Passforge | 高级密码生成器",
+        "description": "高安全性、纯内存加密密码生成器。即时创建强大、不可破解的密码，零数据存储。",
+        "keywords": "密码生成器, 安全密码, 随机密码, pin生成器, 密码短语, 安全工具"
+    },
     "home": {
         "title": "Passforge",
         "subtitle": "加密熵引擎",

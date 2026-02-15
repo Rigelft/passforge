@@ -1,4 +1,9 @@
 {
+    "meta": {
+        "title": "Passforge | Gerador de Senhas Premium",
+        "description": "Gerador de senhas criptográficas de alta segurança, 100% RAM. Crie senhas fortes e inquebráveis instantaneamente sem armazenamento de dados.",
+        "keywords": "gerador de senhas, senha segura, senha aleatória, gerador de pin, frase secreta, ferramenta de segurança"
+    },
     "home": {
         "title": "Passforge",
         "subtitle": "Motor de Entropia Criptográfica",

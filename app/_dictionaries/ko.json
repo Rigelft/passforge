@@ -1,4 +1,9 @@
 {
+    "meta": {
+        "title": "Passforge | 프리미엄 비밀번호 생성기",
+        "description": "고보안, RAM 전용 암호화 비밀번호 생성기. 데이터 저장 없이 강력하고 해독 불가능한 비밀번호를 즉시 생성합니다.",
+        "keywords": "비밀번호 생성기, 보안 비밀번호, 랜덤 비밀번호, pin 생성기, 암호, 보안 도구"
+    },
     "home": {
         "title": "Passforge",
         "subtitle": "암호화 엔트로피 엔진",
