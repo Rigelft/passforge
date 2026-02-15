@@ -3,7 +3,6 @@
 import { useState, useEffect, useCallback } from "react";
 import PasswordDisplay from "./PasswordDisplay";
 import SettingsForm, { GenerationMode } from "./SettingsForm";
-import HistoryList from "./HistoryList";
 import {
     generateRandom,
     generateMemorable,
@@ -12,7 +11,8 @@ import {
 } from "../_data/generator";
 import styles from "./GeneratorContainer.module.css";
 
-export default function GeneratorContainer() {
+export default function GeneratorContainer({ dictionary }: { dictionary: any }) {
+    const dict = dictionary;
     const [mode, setMode] = useState<GenerationMode>("Random");
     const [length, setLength] = useState(16);
     const [wordCount, setWordCount] = useState(3);
@@ -30,8 +30,6 @@ export default function GeneratorContainer() {
         entropy: 0
     });
 
-    const [history, setHistory] = useState<PasswordResult[]>([]);
-
     const handleGenerate = useCallback(() => {
         let result: PasswordResult;
 
@@ -45,7 +43,6 @@ export default function GeneratorContainer() {
 
         if (result.value) {
             setCurrentPassword(result);
-            setHistory(prev => [result, ...prev].slice(0, 50));
         }
     }, [mode, length, wordCount, separator, options]);
 
@@ -54,19 +51,11 @@ export default function GeneratorContainer() {
         handleGenerate();
     }, []);
 
-    // Regenerate when specific options change (length, toggles) 
+    // Regenerate when specific options change (length, toggles)
     // but maybe not mode immediately to avoid jumping too much
     useEffect(() => {
         handleGenerate();
     }, [length, wordCount, separator, options, mode]);
-
-    const deleteHistoryItem = (index: number) => {
-        setHistory(prev => prev.filter((_, i) => i !== index));
-    };
-
-    const clearHistory = () => {
-        setHistory([]);
-    };
 
     return (
         <div className={styles.container}>
@@ -74,6 +63,7 @@ export default function GeneratorContainer() {
                 <PasswordDisplay
                     password={currentPassword}
                     onRegenerate={handleGenerate}
+                    dictionary={dict}
                 />
                 <SettingsForm
                     mode={mode}
@@ -86,14 +76,7 @@ export default function GeneratorContainer() {
                     setWordCount={setWordCount}
                     separator={separator}
                     setSeparator={setSeparator}
-                />
-            </div>
-
-            <div className={styles.sidePanel}>
-                <HistoryList
-                    history={history}
-                    onDelete={deleteHistoryItem}
-                    onClear={clearHistory}
+                    dictionary={dict}
                 />
             </div>
         </div>

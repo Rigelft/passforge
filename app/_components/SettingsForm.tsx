@@ -11,26 +11,29 @@ interface SettingsFormProps {
     setMode: (mode: GenerationMode) => void;
     length: number;
     setLength: (len: number) => void;
+    wordCount: number;
+    setWordCount: (count: number) => void;
+    separator: string;
+    setSeparator: (sep: string) => void;
     options: {
         uppercase: boolean;
         lowercase: boolean;
         numbers: boolean;
         symbols: boolean;
     };
-    setOptions: (options: any) => void;
-    wordCount: number;
-    setWordCount: (count: number) => void;
-    separator: string;
-    setSeparator: (sep: string) => void;
+    setOptions: (opts: any) => void;
+    dictionary: any;
 }
 
 export default function SettingsForm({
     mode, setMode,
     length, setLength,
-    options, setOptions,
     wordCount, setWordCount,
-    separator, setSeparator
+    separator, setSeparator,
+    options, setOptions,
+    dictionary
 }: SettingsFormProps) {
+    const dict = dictionary;
 
     const toggleOption = (key: keyof typeof options) => {
         setOptions({ ...options, [key]: !options[key] });

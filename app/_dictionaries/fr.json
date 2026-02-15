@@ -1,0 +1,35 @@
+{
+    "home": {
+        "title": "Passforge",
+        "subtitle": "Moteur d'Entropie Cryptographique",
+        "csp_badge": "CSPRNG Actif",
+        "footer": "© 2026 Passforge • Pas de base de données • Pas de cookies • 100% Mémoire RAM"
+    },
+    "generator": {
+        "generate": "Générer"
+    },
+    "settings": {
+        "tabs": {
+            "random": "Aléatoire",
+            "memorable": "Mémorable",
+            "pin": "PIN"
+        },
+        "length": "Longueur du Mot de Passe",
+        "word_count": "Nombre de Mots",
+        "separator": "Séparateur",
+        "uppercase": "Majuscules (A-Z)",
+        "lowercase": "Minuscules (a-z)",
+        "numbers": "Chiffres (0-9)",
+        "symbols": "Symboles (!@#$)",
+        "pin_length": "Longueur du PIN",
+        "pin_info": "Les PINs sont générés avec une distribution uniforme pour une sécurité maximale."
+    },
+    "display": {
+        "security": "Sécurité",
+        "entropy": "bits d'entropie",
+        "generate_placeholder": "Générez un mot de passe...",
+        "regenerate": "Régénérer",
+        "copy": "Copier",
+        "copied": "Copié"
+    }
+}

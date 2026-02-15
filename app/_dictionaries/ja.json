@@ -1,0 +1,35 @@
+{
+    "home": {
+        "title": "Passforge",
+        "subtitle": "暗号化エントロピーエンジン",
+        "csp_badge": "CSPRNG アクティブ",
+        "footer": "© 2026 Passforge • データベースなし • クッキーなし • 100% RAM メモリ"
+    },
+    "generator": {
+        "generate": "生成する"
+    },
+    "settings": {
+        "tabs": {
+            "random": "ランダム",
+            "memorable": "覚えやすい",
+            "pin": "PIN"
+        },
+        "length": "パスワードの長さ",
+        "word_count": "単語数",
+        "separator": "区切り文字",
+        "uppercase": "大文字 (A-Z)",
+        "lowercase": "小文字 (a-z)",
+        "numbers": "数字 (0-9)",
+        "symbols": "記号 (!@#$)",
+        "pin_length": "PIN の長さ",
+        "pin_info": "PIN は最大のセキュリティのために均一な分布で生成されます。"
+    },
+    "display": {
+        "security": "セキュリティ",
+        "entropy": "ビットのエントロピー",
+        "generate_placeholder": "パスワードを生成...",
+        "regenerate": "再生成",
+        "copy": "コピー",
+        "copied": "コピー完了"
+    }
+}

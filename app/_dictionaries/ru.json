@@ -1,0 +1,35 @@
+{
+    "home": {
+        "title": "Passforge",
+        "subtitle": "Криптографический Генератор Энтропии",
+        "csp_badge": "CSPRNG Активен",
+        "footer": "© 2026 Passforge • Без базы данных • Без куки • 100% RAM Память"
+    },
+    "generator": {
+        "generate": "Создать"
+    },
+    "settings": {
+        "tabs": {
+            "random": "Случайный",
+            "memorable": "Запоминающийся",
+            "pin": "PIN"
+        },
+        "length": "Длина Пароля",
+        "word_count": "Количество Слов",
+        "separator": "Разделитель",
+        "uppercase": "Заглавные (A-Z)",
+        "lowercase": "Строчные (a-z)",
+        "numbers": "Цифры (0-9)",
+        "symbols": "Символы (!@#$)",
+        "pin_length": "Длина PIN",
+        "pin_info": "PIN генерируются с равномерным распределением для максимальной безопасности."
+    },
+    "display": {
+        "security": "Безопасность",
+        "entropy": "бит энтропии",
+        "generate_placeholder": "Сгенерируйте пароль...",
+        "regenerate": "Пересоздать",
+        "copy": "Копировать",
+        "copied": "Скопировано"
+    }
+}
